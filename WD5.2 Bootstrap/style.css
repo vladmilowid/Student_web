@@ -1,0 +1,23 @@
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #626262
+}
+
+a {
+  color: #b4ad9e;
+}
+
+a:hover {
+  color: #898377;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  
+}
