@@ -1,0 +1,27 @@
+/**
+При помощи CSS стилей изменил цвет заголовка h2, размер текста в абзаце p и также добавил границу для изображения img.
+**/
+
+h1 {
+    color: peru;
+    font-family: 'Bruno Ace', cursive;
+}
+
+h2 {
+    color: sandybrown;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Vina Sans', cursive;
+}
+
+
+
+
+
+
+
+
+
