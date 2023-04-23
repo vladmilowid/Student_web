@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вычисление факториала</title>
+</head>
+<body>
+    <h1>Вычисление факториала</h1>
+    <p>Введите число:</p>
+    <input type="text" id="number">
+    <button type="button" onclick="calculate()">Вычислить</button>
+    <p id="result"></p>
+ 
+    <script>
+        function calculate() {
+            let num = document.getElementById("number").value;
+            let factorial = 1;
+ 
+            for (let i = 1; i <= num; i++) {
+                factorial *= i;
+            }
+ 
+            document.getElementById("result").innerHTML = "Факториал числа " + num + " равен " + factorial;
+        }
+    </script>
+</body>
+</html>
