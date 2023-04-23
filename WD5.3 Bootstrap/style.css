@@ -1,0 +1,30 @@
+
+.carousel-item {
+    height: 500px;
+    background-color: #EEE;
+}
+
+.btn-primary {
+    background-color: #009688;
+    border-color: #009688;
+}
+
+.card {
+    border: 1px solid #EEE;
+    padding: 20px;
+}
+
+.form-control {
+    background-color: #F5F5F5;
+    border-color: #EEE;
+}
+
+.my_img {
+    max-width: 20%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    
+  }
+
