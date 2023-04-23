@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Симулятор</title>
+</head>
+<body>
+    <h1>Симулятор</h1>
+    <p>Нажмите кнопку ниже, чтобы смоделировать:</p>
+    <button onclick="simulate()">Симулятор</button>
+    <p id="result"></p>
+
+    <script>
+        function simulate() {
+            var redCount = 0;
+            var blackCount = 0;
+            var whiteCount = 0;
+    
+            for (var i = 0; i < 1000000; i++) {
+                var randomNumber = Math.floor(Math.random() * 3);
+    
+                switch(randomNumber) {
+                    case 0: 
+                        redCount++;
+                        break;
+                    case 1:
+                        blackCount++;
+                        break;
+                    case 2:
+                        whiteCount++;
+                        break;
+                }
+            }
+            //После 1000000 итераций использую функцию Math.max() - находит максимальное значение среди всех цветов.
+            var maxCount = Math.max(redCount, blackCount, whiteCount);
+    
+            var result = "Красное значение: " + redCount + "<br>";
+            result += "Черное значение: " + blackCount + "<br>";
+            result += "Белое значение: " + whiteCount + "<br>";
+            result += "Максимальное значение: " + maxCount;
+    
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

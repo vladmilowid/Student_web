@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Среднее арифметическое положительных элементов в массиве</title>
+</head>
+<body>
+	<h1>Среднее арифметическое положительных элементов в массиве</h1>
+	<p id="result">Результат: </p>
+
+	<script>
+		// Создаем массив из 15 случайных целых чисел в интервале [-10, 30]
+		let array = [];
+		for (let i = 0; i < 15; i++) {
+			let num = Math.floor(Math.random() * 41) - 10;
+			array.push(num);
+		}
+
+		// Находим среднее арифметическое положительных элементов массива
+		let sum = 0;
+		let count = 0;
+		for (let i = 0; i < array.length; i++) {
+			if (array[i] > 0) {
+				sum += array[i];
+				count++;
+			}
+		}
+
+		let average = sum / count;
+
+		// Выводим результат на страницу
+		document.getElementById("result").innerHTML += "Среднее арифметическое положительных элементов в массиве = " + average;
+	</script>
+</body>
+</html>
