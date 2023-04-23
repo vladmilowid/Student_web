@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Калькулятор</title>
+</head>
+<body>
+	<h1>Калькулятор</h1>
+	<p>Введите два числа:</p>
+	<input type="text" id="num1">
+	<input type="text" id="num2">
+	<br><br>
+	<button onclick="add()">Сложить</button>
+	<button onclick="subtract()">Вычесть</button>
+	<button onclick="multiply()">Умножить</button>
+	<button onclick="divide()">Разделить</button>
+	<br><br>
+	<p>Результат: <span id="result"></span></p>
+
+	<script type="text/javascript">
+		function add() {
+			var num1 = +document.getElementById("num1").value;
+			var num2 = +document.getElementById("num2").value;
+			var result = num1 + num2;
+			document.getElementById("result").innerHTML = result;
+		}
+
+		function subtract() {
+			var num1 = +document.getElementById("num1").value;
+			var num2 = +document.getElementById("num2").value;
+			var result = num1 - num2;
+			document.getElementById("result").innerHTML = result;
+		}
+
+		function multiply() {
+			var num1 = +document.getElementById("num1").value;
+			var num2 = +document.getElementById("num2").value;
+			var result = num1 * num2;
+			document.getElementById("result").innerHTML = result;
+		}
+
+		function divide() {
+			var num1 = +document.getElementById("num1").value;
+			var num2 = +document.getElementById("num2").value;
+			var result = num1 / num2;
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+</body>
+</html>
+
+

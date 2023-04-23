@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <script>
+      // Запрашиваю у пользователя имя и год рождения
+      let name = prompt('Введите ваше имя', '');
+      let year = prompt('Введите ваш год рождения', '');
+      
+      // Вычисляю возраст пользователя
+      let age = new Date().getFullYear() - year;
+      
+      // Вывожу результат на странице
+      let message = name + ': ' + age;
+      document.write('<p>' + message + '</p>');
+    </script>
+  </body>
+</html>
