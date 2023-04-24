@@ -1,0 +1,23 @@
+<!--https://github.com/vladmilowid/Student_web.git-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Замена отрицательных чисел на их квадраты</title>
+</head>
+<body>
+	<h2>Массив до:</h2>
+	<p id="before"></p>
+
+	<h2>Массив после преобразования:</h2>
+	<p id="after"></p>
+
+	<script>
+		let arr = [-1, 2, -3, 4, -5, 6, -7, 8, -9, 10, 11]; // пример числового массива
+		let newArr = arr.map(num => num < 0 ? num*num : num); // замена отрицательных чисел на их квадраты
+
+		document.getElementById("before").innerHTML = arr; // вывод массива до изменений
+		document.getElementById("after").innerHTML = newArr; // вывод массива после изменений
+	</script>
+</body>
+</html>
